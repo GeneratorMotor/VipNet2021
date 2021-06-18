@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSСтатистикаИсполнителей" targetNamespace="http://tempuri.org/DSСтатистикаИсполнителей.xsd" xmlns:mstns="http://tempuri.org/DSСтатистикаИсполнителей.xsd" xmlns="http://tempuri.org/DSСтатистикаИсполнителей.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSСтатистикаИсполнителей" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSСтатистикаИсполнителей" msprop:Generator_DataSetName="DSСтатистикаИсполнителей">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Исполнители" msprop:Generator_UserTableName="Исполнители" msprop:Generator_RowDeletedName="ИсполнителиRowDeleted" msprop:Generator_RowChangedName="ИсполнителиRowChanged" msprop:Generator_RowClassName="ИсполнителиRow" msprop:Generator_RowChangingName="ИсполнителиRowChanging" msprop:Generator_RowEvArgName="ИсполнителиRowChangeEvent" msprop:Generator_RowEvHandlerName="ИсполнителиRowChangeEventHandler" msprop:Generator_TableClassName="ИсполнителиDataTable" msprop:Generator_TableVarName="tableИсполнители" msprop:Generator_RowDeletingName="ИсполнителиRowDeleting" msprop:Generator_TablePropName="Исполнители">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ОписаниеИсполнителя" msprop:Generator_UserColumnName="ОписаниеИсполнителя" msprop:Generator_ColumnPropNameInRow="ОписаниеИсполнителя" msprop:Generator_ColumnVarNameInTable="columnОписаниеИсполнителя" msprop:Generator_ColumnPropNameInTable="ОписаниеИсполнителяColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ПочтыПринято" msprop:Generator_UserColumnName="ПочтыПринято" msprop:Generator_ColumnPropNameInRow="ПочтыПринято" msprop:Generator_ColumnVarNameInTable="columnПочтыПринято" msprop:Generator_ColumnPropNameInTable="ПочтыПринятоColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ПочтыОтправлено" msprop:Generator_UserColumnName="ПочтыОтправлено" msprop:Generator_ColumnVarNameInTable="columnПочтыОтправлено" msprop:Generator_ColumnPropNameInRow="ПочтыОтправлено" msprop:Generator_ColumnPropNameInTable="ПочтыОтправленоColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

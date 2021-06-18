@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSКонтрольныеУведомления" targetNamespace="http://tempuri.org/DSКонтрольныеУведомления.xsd" xmlns:mstns="http://tempuri.org/DSКонтрольныеУведомления.xsd" xmlns="http://tempuri.org/DSКонтрольныеУведомления.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSКонтрольныеУведомления" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSКонтрольныеУведомления" msprop:Generator_DataSetName="DSКонтрольныеУведомления">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Получатели" msprop:Generator_UserTableName="Получатели" msprop:Generator_RowDeletedName="ПолучателиRowDeleted" msprop:Generator_RowChangedName="ПолучателиRowChanged" msprop:Generator_RowClassName="ПолучателиRow" msprop:Generator_RowChangingName="ПолучателиRowChanging" msprop:Generator_RowEvArgName="ПолучателиRowChangeEvent" msprop:Generator_RowEvHandlerName="ПолучателиRowChangeEventHandler" msprop:Generator_TableClassName="ПолучателиDataTable" msprop:Generator_TableVarName="tableПолучатели" msprop:Generator_RowDeletingName="ПолучателиRowDeleting" msprop:Generator_TablePropName="Получатели">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Получателя" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="id_Получателя" msprop:Generator_ColumnVarNameInTable="columnid_Получателя" msprop:Generator_ColumnPropNameInRow="id_Получателя" msprop:Generator_ColumnPropNameInTable="id_ПолучателяColumn" type="xs:int" />
+              <xs:element name="ОписаниеПолучателя" msprop:Generator_UserColumnName="ОписаниеПолучателя" msprop:Generator_ColumnVarNameInTable="columnОписаниеПолучателя" msprop:Generator_ColumnPropNameInRow="ОписаниеПолучателя" msprop:Generator_ColumnPropNameInTable="ОписаниеПолучателяColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="КолвоДокументовНаКонтроле" msprop:Generator_UserColumnName="КолвоДокументовНаКонтроле" msprop:Generator_ColumnVarNameInTable="columnКолвоДокументовНаКонтроле" msprop:Generator_ColumnPropNameInRow="КолвоДокументовНаКонтроле" msprop:Generator_ColumnPropNameInTable="КолвоДокументовНаКонтролеColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="КолвоДокументовС1Днем" msprop:Generator_UserColumnName="КолвоДокументовС1Днем" msprop:Generator_ColumnVarNameInTable="columnКолвоДокументовС1Днем" msprop:Generator_ColumnPropNameInRow="КолвоДокументовС1Днем" msprop:Generator_ColumnPropNameInTable="КолвоДокументовС1ДнемColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="КолвоПросроченныхДокументов" msprop:Generator_UserColumnName="КолвоПросроченныхДокументов" msprop:Generator_ColumnVarNameInTable="columnКолвоПросроченныхДокументов" msprop:Generator_ColumnPropNameInRow="КолвоПросроченныхДокументов" msprop:Generator_ColumnPropNameInTable="КолвоПросроченныхДокументовColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ДокументыСИстекшимиСроками" msprop:Generator_UserTableName="ДокументыСИстекшимиСроками" msprop:Generator_RowDeletedName="ДокументыСИстекшимиСрокамиRowDeleted" msprop:Generator_RowChangedName="ДокументыСИстекшимиСрокамиRowChanged" msprop:Generator_RowClassName="ДокументыСИстекшимиСрокамиRow" msprop:Generator_RowChangingName="ДокументыСИстекшимиСрокамиRowChanging" msprop:Generator_RowEvArgName="ДокументыСИстекшимиСрокамиRowChangeEvent" msprop:Generator_RowEvHandlerName="ДокументыСИстекшимиСрокамиRowChangeEventHandler" msprop:Generator_TableClassName="ДокументыСИстекшимиСрокамиDataTable" msprop:Generator_TableVarName="tableДокументыСИстекшимиСроками" msprop:Generator_RowDeletingName="ДокументыСИстекшимиСрокамиRowDeleting" msprop:Generator_TablePropName="ДокументыСИстекшимиСроками">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Документа" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="id_Документа" msprop:Generator_ColumnVarNameInTable="columnid_Документа" msprop:Generator_ColumnPropNameInRow="id_Документа" msprop:Generator_ColumnPropNameInTable="id_ДокументаColumn" type="xs:int" />
+              <xs:element name="id_Получателя" msprop:Generator_UserColumnName="id_Получателя" msprop:Generator_ColumnVarNameInTable="columnid_Получателя" msprop:Generator_ColumnPropNameInRow="id_Получателя" msprop:Generator_ColumnPropNameInTable="id_ПолучателяColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ДатаПоступления" msprop:Generator_UserColumnName="ДатаПоступления" msprop:Generator_ColumnVarNameInTable="columnДатаПоступления" msprop:Generator_ColumnPropNameInRow="ДатаПоступления" msprop:Generator_ColumnPropNameInTable="ДатаПоступленияColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="НомерВходящий" msprop:Generator_UserColumnName="НомерВходящий" msprop:Generator_ColumnVarNameInTable="columnНомерВходящий" msprop:Generator_ColumnPropNameInRow="НомерВходящий" msprop:Generator_ColumnPropNameInTable="НомерВходящийColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ДатаКонтроля" msprop:Generator_UserColumnName="ДатаКонтроля" msprop:Generator_ColumnVarNameInTable="columnДатаКонтроля" msprop:Generator_ColumnPropNameInRow="ДатаКонтроля" msprop:Generator_ColumnPropNameInTable="ДатаКонтроляColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="НомерПП" msprop:Generator_UserColumnName="НомерПП" msprop:Generator_ColumnPropNameInRow="НомерПП" msprop:Generator_ColumnVarNameInTable="columnНомерПП" msprop:Generator_ColumnPropNameInTable="НомерППColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ДокументыС1Днем" msprop:Generator_UserTableName="ДокументыС1Днем" msprop:Generator_RowDeletedName="ДокументыС1ДнемRowDeleted" msprop:Generator_RowChangedName="ДокументыС1ДнемRowChanged" msprop:Generator_RowClassName="ДокументыС1ДнемRow" msprop:Generator_RowChangingName="ДокументыС1ДнемRowChanging" msprop:Generator_RowEvArgName="ДокументыС1ДнемRowChangeEvent" msprop:Generator_RowEvHandlerName="ДокументыС1ДнемRowChangeEventHandler" msprop:Generator_TableClassName="ДокументыС1ДнемDataTable" msprop:Generator_TableVarName="tableДокументыС1Днем" msprop:Generator_RowDeletingName="ДокументыС1ДнемRowDeleting" msprop:Generator_TablePropName="ДокументыС1Днем">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Документа" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="id_Документа" msprop:Generator_ColumnVarNameInTable="columnid_Документа" msprop:Generator_ColumnPropNameInRow="id_Документа" msprop:Generator_ColumnPropNameInTable="id_ДокументаColumn" type="xs:int" />
+              <xs:element name="id_Получателя" msprop:Generator_UserColumnName="id_Получателя" msprop:Generator_ColumnVarNameInTable="columnid_Получателя" msprop:Generator_ColumnPropNameInRow="id_Получателя" msprop:Generator_ColumnPropNameInTable="id_ПолучателяColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ДатаПоступления" msprop:Generator_UserColumnName="ДатаПоступления" msprop:Generator_ColumnVarNameInTable="columnДатаПоступления" msprop:Generator_ColumnPropNameInRow="ДатаПоступления" msprop:Generator_ColumnPropNameInTable="ДатаПоступленияColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="НомерВходящий" msprop:Generator_UserColumnName="НомерВходящий" msprop:Generator_ColumnVarNameInTable="columnНомерВходящий" msprop:Generator_ColumnPropNameInRow="НомерВходящий" msprop:Generator_ColumnPropNameInTable="НомерВходящийColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="НомерПП" msprop:Generator_UserColumnName="НомерПП" msprop:Generator_ColumnPropNameInRow="НомерПП" msprop:Generator_ColumnVarNameInTable="columnНомерПП" msprop:Generator_ColumnPropNameInTable="НомерППColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Документы" msprop:Generator_UserTableName="Документы" msprop:Generator_RowDeletedName="ДокументыRowDeleted" msprop:Generator_RowChangedName="ДокументыRowChanged" msprop:Generator_RowClassName="ДокументыRow" msprop:Generator_RowChangingName="ДокументыRowChanging" msprop:Generator_RowEvArgName="ДокументыRowChangeEvent" msprop:Generator_RowEvHandlerName="ДокументыRowChangeEventHandler" msprop:Generator_TableClassName="ДокументыDataTable" msprop:Generator_TableVarName="tableДокументы" msprop:Generator_RowDeletingName="ДокументыRowDeleting" msprop:Generator_TablePropName="Документы">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_Документа" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="id_Документа" msprop:Generator_ColumnVarNameInTable="columnid_Документа" msprop:Generator_ColumnPropNameInRow="id_Документа" msprop:Generator_ColumnPropNameInTable="id_ДокументаColumn" type="xs:int" />
+              <xs:element name="id_Получателя" msprop:Generator_UserColumnName="id_Получателя" msprop:Generator_ColumnVarNameInTable="columnid_Получателя" msprop:Generator_ColumnPropNameInRow="id_Получателя" msprop:Generator_ColumnPropNameInTable="id_ПолучателяColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ДатаПоступления" msprop:Generator_UserColumnName="ДатаПоступления" msprop:Generator_ColumnVarNameInTable="columnДатаПоступления" msprop:Generator_ColumnPropNameInRow="ДатаПоступления" msprop:Generator_ColumnPropNameInTable="ДатаПоступленияColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="НомерВходящий" msprop:Generator_UserColumnName="НомерВходящий" msprop:Generator_ColumnVarNameInTable="columnНомерВходящий" msprop:Generator_ColumnPropNameInRow="НомерВходящий" msprop:Generator_ColumnPropNameInTable="НомерВходящийColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ДатаКонтроля" msprop:Generator_UserColumnName="ДатаКонтроля" msprop:Generator_ColumnVarNameInTable="columnДатаКонтроля" msprop:Generator_ColumnPropNameInRow="ДатаКонтроля" msprop:Generator_ColumnPropNameInTable="ДатаКонтроляColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="НомерПП" msprop:Generator_UserColumnName="НомерПП" msprop:Generator_ColumnVarNameInTable="columnНомерПП" msprop:Generator_ColumnPropNameInRow="НомерПП" msprop:Generator_ColumnPropNameInTable="НомерППColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ТипДокумента" msprop:Generator_UserColumnName="ТипДокумента" msprop:Generator_ColumnVarNameInTable="columnТипДокумента" msprop:Generator_ColumnPropNameInRow="ТипДокумента" msprop:Generator_ColumnPropNameInTable="ТипДокументаColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ПолучателиKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Получатели" />
+      <xs:field xpath="mstns:id_Получателя" />
+    </xs:unique>
+    <xs:unique name="ДокументыСИстекшимиСрокамиKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ДокументыСИстекшимиСроками" />
+      <xs:field xpath="mstns:id_Документа" />
+    </xs:unique>
+    <xs:unique name="ДокументыС1ДнемKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ДокументыС1Днем" />
+      <xs:field xpath="mstns:id_Документа" />
+    </xs:unique>
+    <xs:unique name="ДокументыKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Документы" />
+      <xs:field xpath="mstns:id_Документа" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

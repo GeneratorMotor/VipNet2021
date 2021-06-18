@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[RegKor.sln]
+SCC_Aux_Path = "\\PDC\VSS\"
+SCC_Project_Name = "$/RegKor.root/RegKor/РегистрацияКорреспонденции", DAAAAAAA
+
+[RegKor.csproj]
+SCC_Aux_Path = "\\PDC\VSS\"
+SCC_Project_Name = "$/RegKor.root/RegKor/РегистрацияКорреспонденции", DAAAAAAA

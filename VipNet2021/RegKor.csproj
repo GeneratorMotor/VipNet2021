@@ -1,0 +1,924 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBF6644E-EC01-4BBE-A452-94A512F0B3A7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>icon1.ICO</ApplicationIcon>
+    <AssemblyName>RegKor</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RegKor</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>RegKor.FormГлавная</StartupObject>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <SignAssembly>false</SignAssembly>
+    <SignManifests>false</SignManifests>
+    <ManifestCertificateThumbprint>7B5314A3A5835B6C8BFFC6624B65CE5C21023B66</ManifestCertificateThumbprint>
+    <ManifestKeyFile>RegKor_TemporaryKey.pfx</ManifestKeyFile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ExcludedPermissions>System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089; System.Security.Permissions.FileDialogPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089; System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089; System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExcludedPermissions>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>D:\Odin\reg\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CarlosAg.ExcelXmlWriter, Version=1.0.0.6, Culture=neutral" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.2.3600.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SevenZipSharp, Version=0.64.3890.29348, Culture=neutral, PublicKeyToken=20de82c62b055c88, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.ServiceProcess\2.0.0.0__b03f5f7f11d50a3a\System.ServiceProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bin\report\Card.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Card.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\report\ExpiredDoc.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpiredDoc.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\report\KontrolMessage.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KontrolMessage.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\report\MCard.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MCard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\report\Statistic.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Statistic.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\report\StatisticOutPost.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatisticOutPost.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classess2021\ConvertTableSIYToList.cs" />
+    <Compile Include="Classess2021\ConvertTableToList.cs" />
+    <Compile Include="Classess2021\IConvertTableToList.cs" />
+    <Compile Include="Classess2021\InsertQueryОснованиеПередачи.cs" />
+    <Compile Include="Classess2021\IntemЖурналУчетаСЭУ.cs" />
+    <Compile Include="Classess2021\IQueryStringSQL.cs" />
+    <Compile Include="Classess2021\LoadQueryОснованиеПередачи.cs" />
+    <Compile Include="Classess2021\QuerySelectInputDocSIY.cs" />
+    <Compile Include="Classess2021\QueryОснованиеПередачи.cs" />
+    <Compile Include="Classess2021\QueryСвязующаяУчетаПерсональныхДанных.cs" />
+    <Compile Include="Classess2021\UpdateQueryОснованиеПередачи.cs" />
+    <Compile Include="Classess2021\ЖурналУчетаСЭУ.cs" />
+    <Compile Include="Classess\Archiver.cs" />
+    <Compile Include="Classess\ConnectionBD.cs" />
+    <Compile Include="Classess\ControlFlagRepeet.cs" />
+    <Compile Include="Classess\DataBaseContext.cs" />
+    <Compile Include="Classess\DataTableSql.cs" />
+    <Compile Include="Classess\DatePersonal.cs" />
+    <Compile Include="Classess\DepartmentPerson.cs" />
+    <Compile Include="Classess\DocExcelCell.cs" />
+    <Compile Include="Classess\DocumentPerson.cs" />
+    <Compile Include="Classess\ExcelPrint.cs" />
+    <Compile Include="Classess\ExcelStatistic.cs" />
+    <Compile Include="Classess\ExcelОтчет.cs" />
+    <Compile Include="Classess\GenerateStaticDocInput.cs" />
+    <Compile Include="Classess\IPrintReport.cs" />
+    <Compile Include="Classess\IReport.cs" />
+    <Compile Include="Classess\ItemStatisticDoc.cs" />
+    <Compile Include="Classess\IОтчет.cs" />
+    <Compile Include="Classess\Montch.cs" />
+    <Compile Include="Classess\NumOutputCardVipNet.cs" />
+    <Compile Include="Classess\PersonCell.cs" />
+    <Compile Include="Classess\ExcelGenerate.cs" />
+    <Compile Include="Classess\ExcelЯчейка.cs" />
+    <Compile Include="Classess\ExecuteQuery.cs" />
+    <Compile Include="Classess\FillDataSet.cs" />
+    <Compile Include="Classess\GetDataTable.cs" />
+    <Compile Include="Classess\IFillDataSet.cs" />
+    <Compile Include="Classess\IProcessGetDoc.cs" />
+    <Compile Include="Classess\ItemAbstractПоступлениеДокументов.cs" />
+    <Compile Include="Classess\ItemDoc.cs" />
+    <Compile Include="Classess\ItemСпособПоступленияДокумента.cs" />
+    <Compile Include="Classess\IВидДокумента.cs" />
+    <Compile Include="Classess\IСписокНачальников.cs" />
+    <Compile Include="Classess\Log.cs" />
+    <Compile Include="Classess\MyAplicationIdentity.cs" />
+    <Compile Include="Classess\PersonDataDefault.cs" />
+    <Compile Include="Classess\PersonDocument.cs" />
+    <Compile Include="Classess\PersonRecepient.cs" />
+    <Compile Include="Classess\PrintReport.cs" />
+    <Compile Include="Classess\PrintReportStaticOutputDoc.cs" />
+    <Compile Include="Classess\PrintДокументооборот.cs" />
+    <Compile Include="Classess\ProcessGetDoc.cs" />
+    <Compile Include="Classess\RangeDate.cs" />
+    <Compile Include="Classess\ReportНомераИсходящихДокументов.cs" />
+    <Compile Include="Classess\ReportОтчетВходящихДокументов.cs" />
+    <Compile Include="Classess\ReportОтчетИсходящиеДокументы.cs" />
+    <Compile Include="Classess\ReportСтатистикаВходящихДокументов.cs" />
+    <Compile Include="Classess\ReportСтатистикаИсходящихДокументов.cs" />
+    <Compile Include="Classess\Statistic.cs" />
+    <Compile Include="Classess\StatisticControlNotific.cs" />
+    <Compile Include="Classess\StatisticDocInput.cs" />
+    <Compile Include="Classess\WordPrint.cs" />
+    <Compile Include="Classess\YearMonth.cs" />
+    <Compile Include="Classess\БазаДанныхДокументооборот.cs" />
+    <Compile Include="Classess\ВерсияРаботы.cs" />
+    <Compile Include="Classess\ВидПоступленияДокументаDBContext.cs" />
+    <Compile Include="Classess\Время.cs" />
+    <Compile Include="Classess\Выборка.cs" />
+    <Compile Include="Classess\ГодДокументооборота.cs" />
+    <Compile Include="Classess\Дата.cs" />
+    <Compile Include="Classess\ДатаSQL.cs" />
+    <Compile Include="Classess\ДатаРаботыПрограммы.cs" />
+    <Compile Include="Classess\ДокументооборотConfig.cs" />
+    <Compile Include="Classess\ДокументыИстекшийСрок.cs" />
+    <Compile Include="Classess\ЖурналПерДанных.cs" />
+    <Compile Include="Classess\Карточка.cs" />
+    <Compile Include="Classess\КарточкаРаспечатанная.cs" />
+    <Compile Include="Classess\Корреспонденты.cs" />
+    <Compile Include="Classess\НомерДокумента.cs" />
+    <Compile Include="Classess\ОснованиеПередачи.cs" />
+    <Compile Include="Classess\ОтметкаПередачаОтказ.cs" />
+    <Compile Include="Classess\ОтчетВходящихДокументов.cs" />
+    <Compile Include="Classess\ОтчетИсходящихДокументов.cs" />
+    <Compile Include="Classess\ОтчетОВходДокументах.cs" />
+    <Compile Include="Classess\ПодключитьБД.cs" />
+    <Compile Include="Classess\ПросроченныеДокументы.cs" />
+    <Compile Include="Classess\СписокНачальников.cs" />
+    <Compile Include="Classess\СтатиистикаИсходящейКорреспонденции.cs" />
+    <Compile Include="Classess\СтатистикаВходИсполнителей.cs" />
+    <Compile Include="Classess\СтатистикаПолученияДокументов.cs" />
+    <Compile Include="Classess\СтатусКарточка.cs" />
+    <Compile Include="Classess\СтрокаОтчёта.cs" />
+    <Compile Include="DS1.cs">
+      <DependentUpon>DS1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSВыборкаИсходящихДокументовПоКоличеству.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSВыборкаИсходящихДокументовПоКоличеству.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSСтатистикаИсполнителей.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSСтатистикаИсполнителей.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormGhjchjxtyystLjr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGhjchjxtyystLjr.Designer.cs">
+      <DependentUpon>FormGhjchjxtyystLjr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessage.Designer.cs">
+      <DependentUpon>FormMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPD.Designer.cs">
+      <DependentUpon>FormPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrintКонтрольноеУведомление.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrintКонтрольноеУведомление.Designer.cs">
+      <DependentUpon>FormPrintКонтрольноеУведомление.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectDate.Designer.cs">
+      <DependentUpon>FormSelectDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectDatePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectDatePerson.Designer.cs">
+      <DependentUpon>FormSelectDatePerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectInputDatePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectInputDatePerson.Designer.cs">
+      <DependentUpon>FormSelectInputDatePerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectMonth.Designer.cs">
+      <DependentUpon>FormSelectMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatInputKorr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatInputKorr.Designer.cs">
+      <DependentUpon>FormStatInputKorr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatOutpotCorr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatOutpotCorr.Designer.cs">
+      <DependentUpon>FormStatOutpotCorr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTypeCompanyDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTypeCompanyDocument.Designer.cs">
+      <DependentUpon>FormTypeCompanyDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewInputDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewInputDoc.Designer.cs">
+      <DependentUpon>FormViewInputDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewOutputDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewOutputDoc.Designer.cs">
+      <DependentUpon>FormViewOutputDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormГодКонфигурации.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormГодКонфигурации.Designer.cs">
+      <DependentUpon>FormГодКонфигурации.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormДиапазонДат2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormДиапазонДатОтправка.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormДиапазонДатОтправка.Designer.cs">
+      <DependentUpon>FormДиапазонДатОтправка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormДокументооборот.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormДокументооборот.Designer.cs">
+      <DependentUpon>FormДокументооборот.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormОснованиеПередачи.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormОснованиеПередачи.Designer.cs">
+      <DependentUpon>FormОснованиеПередачи.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormОтказ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormОтказ.Designer.cs">
+      <DependentUpon>FormОтказ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormОтчетИсполнитетлей.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormОтчетИсполнитетлей.Designer.cs">
+      <DependentUpon>FormОтчетИсполнитетлей.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormПерсональныеДанные.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormПерсональныеДанные.Designer.cs">
+      <DependentUpon>FormПерсональныеДанные.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormПечатьКарточки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormПечатьКарточки.Designer.cs">
+      <DependentUpon>FormПечатьКарточки.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormПодразделениеРуководитель.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormПодразделениеРуководитель.Designer.cs">
+      <DependentUpon>FormПодразделениеРуководитель.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormПодразделения.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSКонтрольныеУведомления.cs">
+      <DependentUpon>DSКонтрольныеУведомления.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DSКонтрольныеУведомления.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSКонтрольныеУведомления.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormГлавная.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormДиапазонДат.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormДокументы.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormКарточка.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormКонтрольныеУведомления.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormКонтрольныеУведомления.Designer.cs">
+      <DependentUpon>FormКонтрольныеУведомления.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormКорреспонденты.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormОжидание.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormОжидание.Designer.cs">
+      <DependentUpon>FormОжидание.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormПечати.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormПолучатели.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormПолучениеПерсональныхДанных.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormПолучениеПерсональныхДанных.Designer.cs">
+      <DependentUpon>FormПолучениеПерсональныхДанных.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormРезолюция.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormСоставПерсДанных.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormСоставПерсДанных.Designer.cs">
+      <DependentUpon>FormСоставПерсДанных.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormСписокВходящиеДокументы.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormСписокВходящиеДокументы.Designer.cs">
+      <DependentUpon>FormСписокВходящиеДокументы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormСписокСотрудников.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormСписокСотрудников.Designer.cs">
+      <DependentUpon>FormСписокСотрудников.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormСправочникПодразделенияКомитета.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormСправочникПодразделенияКомитета.Designer.cs">
+      <DependentUpon>FormСправочникПодразделенияКомитета.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNumberDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNumberDoc.Designer.cs">
+      <DependentUpon>FormNumberDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DSКонтрольныеУведомления.xsc">
+      <DependentUpon>DSКонтрольныеУведомления.xsd</DependentUpon>
+    </None>
+    <None Include="DSКонтрольныеУведомления.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSКонтрольныеУведомления.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSКонтрольныеУведомления.xss">
+      <DependentUpon>DSКонтрольныеУведомления.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="bin\report\Card.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Card.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\report\ExpiredDoc.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ExpiredDoc.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\report\KontrolMessage.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>KontrolMessage.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\report\MCard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MCard.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\report\Statistic.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Statistic.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\report\StatisticOutPost.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StatisticOutPost.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGhjchjxtyystLjr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormGhjchjxtyystLjr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMessage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrintКонтрольноеУведомление.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPrintКонтрольноеУведомление.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectDate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectDatePerson.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectDatePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectInputDatePerson.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectInputDatePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectMonth.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSelectMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatInputKorr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormStatInputKorr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatOutpotCorr.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormStatOutpotCorr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTypeCompanyDocument.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTypeCompanyDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewInputDoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormViewInputDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewOutputDoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormViewOutputDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormГодКонфигурации.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormГодКонфигурации.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormДиапазонДат2.resx">
+      <DependentUpon>FormДиапазонДат2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormДиапазонДатОтправка.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormДиапазонДатОтправка.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormДокументооборот.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormДокументооборот.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormОснованиеПередачи.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormОснованиеПередачи.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormОтказ.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormОтказ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormОтчетИсполнитетлей.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormОтчетИсполнитетлей.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormПерсональныеДанные.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormПерсональныеДанные.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormПечатьКарточки.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormПечатьКарточки.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormПодразделениеРуководитель.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormПодразделениеРуководитель.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormПодразделения.resx">
+      <DependentUpon>FormПодразделения.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormГлавная.resx">
+      <DependentUpon>FormГлавная.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormДиапазонДат.resx">
+      <DependentUpon>FormДиапазонДат.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormДокументы.resx">
+      <DependentUpon>FormДокументы.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormКарточка.resx">
+      <DependentUpon>FormКарточка.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormКонтрольныеУведомления.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormКонтрольныеУведомления.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormКорреспонденты.resx">
+      <DependentUpon>FormКорреспонденты.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormОжидание.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormОжидание.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormПечати.resx">
+      <DependentUpon>FormПечати.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormПолучатели.resx">
+      <DependentUpon>FormПолучатели.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormПолучениеПерсональныхДанных.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormПолучениеПерсональныхДанных.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormРезолюция.resx">
+      <DependentUpon>FormРезолюция.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormСоставПерсДанных.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormСоставПерсДанных.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormСписокВходящиеДокументы.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormСписокВходящиеДокументы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormСписокСотрудников.resx">
+      <DependentUpon>FormСписокСотрудников.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormСправочникПодразделенияКомитета.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormСправочникПодразделенияКомитета.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNumberDoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormNumberDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="FormКарточкаИсходящая.Designer.cs">
+      <DependentUpon>FormКарточкаИсходящая.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormКарточкаИсходящая.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectYearForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectYearForm.Designer.cs">
+      <DependentUpon>SelectYearForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormКарточкаИсходящая.resx">
+      <DependentUpon>FormКарточкаИсходящая.Designer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectYearForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelectYearForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="bin\Debug\7z.dll" />
+    <Content Include="bin\Debug\CarlosAg.ExcelXmlWriter.dll" />
+    <Content Include="bin\Debug\Ionic.Zip.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.Interop.Word.dll" />
+    <Content Include="bin\Debug\Microsoft.Vbe.Interop.dll" />
+    <Content Include="bin\Debug\office.dll" />
+    <Content Include="bin\Debug\SevenZipSharp.dll" />
+    <Content Include="bin\Release\CarlosAg.ExcelXmlWriter.dll" />
+    <Content Include="bin\Release\Microsoft.Office.Interop.Word.dll" />
+    <Content Include="bin\Release\Microsoft.Vbe.Interop.dll" />
+    <Content Include="bin\Release\office.dll" />
+    <Content Include="bin\Release\RegKor.exe" />
+    <Content Include="bin\Release\RegKor.vshost.exe" />
+    <Content Include="icon\del.gif" />
+    <None Include="bin\Debug\Журнал\01.01.2014ЖурналУчетаПередачиПерсональныхДанных26.06.2014.doc" />
+    <None Include="bin\Debug\Журнал\01.09.2014ЖурналУчетаПередачиПерсональныхДанных02.09.2014.doc" />
+    <None Include="bin\Debug\Журнал\01.09.2014ЖурналУчетаПередачиПерсональныхДанных09.09.2014.doc" />
+    <None Include="bin\Debug\Журнал\01.09.2014ЖурналУчетаПередачиПерсональныхДанных10.09.2014.doc" />
+    <None Include="bin\Debug\Журнал\01.09.2014ЖурналУчетаПередачиПерсональныхДанных12.09.2014.doc" />
+    <None Include="bin\Debug\Журнал\02.01.2014ЖурналУчетаПередачиПерсональныхДанных09.06.2014.doc" />
+    <None Include="bin\Debug\Журнал\03.07.2014ЖурналУчетаПередачиПерсональныхДанных03.09.2014.doc" />
+    <None Include="bin\Debug\Журнал\04.08.2014ЖурналУчетаПередачиПерсональныхДанных04.09.2014.doc" />
+    <None Include="bin\Debug\Журнал\04.09.2014ЖурналУчетаПередачиПерсональныхДанных04.09.2014.doc" />
+    <None Include="bin\Debug\Журнал\05.02.2014ЖурналУчетаПередачиПерсональныхДанных27.08.2014.doc" />
+    <None Include="bin\Debug\Журнал\09.01.2014ЖурналУчетаПередачиПерсональныхДанных09.06.2014.doc" />
+    <None Include="bin\Debug\Журнал\27.07.2014ЖурналУчетаПередачиПерсональныхДанных27.08.2014.doc" />
+    <None Include="bin\Debug\Журнал\28.07.2014ЖурналУчетаПередачиПерсональныхДанных28.08.2014.doc" />
+    <None Include="bin\Debug\Шаблон\Документы с истекшими сроками исполнения на.doc" />
+    <None Include="bin\Debug\Шаблон\Журнал учета передачи персональных данных.doc" />
+    <None Include="bin\Debug\Шаблон\Карточка.doc" />
+    <None Include="bin\Release\RegKor.application" />
+    <None Include="bin\Release\RegKor.exe.config" />
+    <None Include="bin\Release\RegKor.vshost.application" />
+    <None Include="bin\Release\RegKor.vshost.exe.config" />
+    <None Include="bin\Release\Журнал\01.01.2014ЖурналУчетаПередачиПерсональныхДанных26.06.2014.doc" />
+    <None Include="bin\Release\Журнал\01.09.2014ЖурналУчетаПередачиПерсональныхДанных02.09.2014.doc" />
+    <None Include="bin\Release\Журнал\01.09.2014ЖурналУчетаПередачиПерсональныхДанных09.09.2014.doc" />
+    <None Include="bin\Release\Журнал\01.09.2014ЖурналУчетаПередачиПерсональныхДанных10.09.2014.doc" />
+    <None Include="bin\Release\Журнал\01.09.2014ЖурналУчетаПередачиПерсональныхДанных12.09.2014.doc" />
+    <None Include="bin\Release\Журнал\02.01.2014ЖурналУчетаПередачиПерсональныхДанных09.06.2014.doc" />
+    <None Include="bin\Release\Журнал\03.07.2014ЖурналУчетаПередачиПерсональныхДанных03.09.2014.doc" />
+    <None Include="bin\Release\Журнал\04.08.2014ЖурналУчетаПередачиПерсональныхДанных04.09.2014.doc" />
+    <None Include="bin\Release\Журнал\04.09.2014ЖурналУчетаПередачиПерсональныхДанных04.09.2014.doc" />
+    <None Include="bin\Release\Журнал\05.02.2014ЖурналУчетаПередачиПерсональныхДанных27.08.2014.doc" />
+    <None Include="bin\Release\Журнал\09.01.2014ЖурналУчетаПередачиПерсональныхДанных09.06.2014.doc" />
+    <None Include="bin\Release\Журнал\27.07.2014ЖурналУчетаПередачиПерсональныхДанных27.08.2014.doc" />
+    <None Include="bin\Release\Журнал\28.07.2014ЖурналУчетаПередачиПерсональныхДанных28.08.2014.doc" />
+    <None Include="bin\Release\Шаблон\Документы с истекшими сроками исполнения на.doc" />
+    <None Include="bin\Release\Шаблон\Журнал учета передачи персональных данных.doc" />
+    <None Include="bin\Release\Шаблон\Карточка.doc" />
+    <None Include="icon\minus2.GIF" />
+    <None Include="DS1.xsc">
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </None>
+    <None Include="DS1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS1.xss">
+      <DependentUpon>DS1.xsd</DependentUpon>
+    </None>
+    <None Include="DSВыборкаИсходящихДокументовПоКоличеству.xsc">
+      <DependentUpon>DSВыборкаИсходящихДокументовПоКоличеству.xsd</DependentUpon>
+    </None>
+    <None Include="DSВыборкаИсходящихДокументовПоКоличеству.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSВыборкаИсходящихДокументовПоКоличеству.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSВыборкаИсходящихДокументовПоКоличеству.xss">
+      <DependentUpon>DSВыборкаИсходящихДокументовПоКоличеству.xsd</DependentUpon>
+    </None>
+    <None Include="DSСтатистикаИсполнителей.xsc">
+      <DependentUpon>DSСтатистикаИсполнителей.xsd</DependentUpon>
+    </None>
+    <None Include="DSСтатистикаИсполнителей.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSСтатистикаИсполнителей.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSСтатистикаИсполнителей.xss">
+      <DependentUpon>DSСтатистикаИсполнителей.xsd</DependentUpon>
+    </None>
+    <None Include="icon\add.gif" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports for .NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.Framework">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.InfoStore">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Archive\" />
+    <Folder Include="bin\File\" />
+    <Folder Include="Properties\DataSources\" />
+    <Folder Include="Журнал\" />
+    <Folder Include="Шаблон\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
